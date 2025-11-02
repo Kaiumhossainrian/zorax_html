@@ -1,0 +1,257 @@
+/* brand css */
+/* brand area style  */
+.brand-content-wrapper {
+    display: grid;
+    gap: 40px 60px;
+    grid-template-columns: 440px 750px;
+    position: relative;
+    z-index: 1;
+
+    @media #{$xl} {
+        grid-template-columns: 440px 600px;
+    }
+
+    @media #{$lg} {
+        grid-template-columns: 400px 1fr;
+    }
+
+    @media #{$md} {
+        grid-template-columns: 1fr;
+    }
+}
+
+.brand-shape-1 {
+    position: absolute;
+    bottom: 0;
+    right: calc(100% - 50px);
+    z-index: -1;
+    width: max-content;
+
+    @media #{$lg} {
+        display: none;
+    }
+}
+
+.brand-content {
+    .title-wrapper {
+        margin-top: 15px;
+    }
+
+
+
+    .text-wrapper {
+        margin-top: 17px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .btn-wrapper {
+        margin-top: 47px;
+    }
+}
+
+
+.brand-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$xs} {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.brand-box {
+    width: 100%;
+    aspect-ratio: 100/ 100;
+    height: 100%;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    transition: background-color 0.3s, border-color 0.3s;
+
+    &:hover {
+        background-color: var(--theme);
+        border-color: transparent;
+    }
+}
+
+/* brand-2 area style  */
+.brand-2-area-inner {
+    padding-top: 120px;
+
+    @media #{$xxl} {
+        padding-top: 110px;
+    }
+
+    @media #{$xl} {
+        padding-top: 80px;
+    }
+
+    @media #{$lg} {
+        padding-top: 60px;
+    }
+}
+
+.brand-2-header {
+    border-top: 1px solid #DDDDDD;
+    padding-top: 72px;
+    text-align: center;
+
+    @media #{$xxl} {
+        padding-top: 52px;
+    }
+
+    @media #{$lg} {
+        padding-top: 32px;
+    }
+}
+
+.brand-2-wrapper-box {
+    margin-top: 52px;
+}
+
+.brand-active {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.brand-2-box {
+    width: 220px;
+    height: 140px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    transition: all 0.3s;
+
+    @media #{$lg} {
+        width: 170px;
+        height: 90px;
+    }
+
+    &:hover {
+        background-color: var(--theme);
+    }
+}
+
+
+/* brand-3 area style  */
+.brand-3-wrapper-box {
+    margin-top: 264px;
+
+    @media #{$xxl} {
+        margin-top: 204px;
+    }
+
+    @media #{$lg} {
+        margin-top: 154px;
+    }
+
+    @media #{$md} {
+        margin-top: 60px;
+    }
+}
+
+.brand-3-active {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+// brand-4 area style 
+.brand-4-area {
+    background-color: var(--background);
+    margin-bottom: -1px;
+}
+
+.brand-4-area-inner {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    gap: 20px 80px;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+
+    @media #{$xxl} {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media #{$sm} {
+        gap: 20px 40px;
+    }
+}
+
+.brand-4-wrapper-box {
+    overflow: hidden;
+}
+
+.brand-4-video {
+    display: flex;
+    align-items: center;
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        overflow: hidden;
+
+        @media #{$xxl} {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .btn-wrapper {
+        margin-left: -30px;
+        border-radius: 50%;
+    }
+
+    .play-button {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+        background-color: var(--theme);
+        border: 4px solid var(--background);
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--black);
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+
+        &:hover {
+            background-color: var(--black);
+            color: var(--theme);
+        }
+    }
+}
+
+.brand-4-active {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}

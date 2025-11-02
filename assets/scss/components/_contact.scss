@@ -1,0 +1,270 @@
+/* contact css */
+/* contact area style  */
+.contact-area-inner {
+    background-color: #F9F9F9;
+    padding: 30px 80px 30px 30px;
+    display: grid;
+    gap: 40px 100px;
+    grid-template-columns: 1fr 710px;
+    justify-content: space-between;
+    align-items: center;
+
+    @media #{$xxl} {
+        gap: 40px 60px;
+        grid-template-columns: 1fr 640px;
+    }
+
+    @media #{$lg} {
+        grid-template-columns: 1fr;
+        padding: 30px 30px 30px 30px;
+    }
+
+    @media #{$sm} {
+        padding: 15px 15px 15px 15px;
+    }
+}
+
+
+
+
+.contact-map {
+    width: 100%;
+    height: 100%;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        min-height: 300px;
+    }
+}
+
+.contact-wrapper-box {
+    padding-top: 85px;
+    padding-bottom: 82px;
+
+    @media #{$lg} {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 1.68;
+        text-transform: capitalize;
+
+        @media #{$md} {
+            font-size: 40px;
+        }
+
+        @media #{$sm} {
+            font-size: 35px;
+        }
+    }
+}
+
+.contact-wrap {
+    margin-top: 39px;
+
+    @media #{$lg} {
+        margin-top: 19px;
+    }
+
+    .contact-formwrap {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: repeat(2, 1fr);
+
+        @media #{$lg} {
+            gap: 20px;
+        }
+
+        @media #{$sm} {
+            grid-template-columns: repeat(1, 1fr);
+
+        }
+
+        .span-2 {
+            grid-column: span 2;
+
+            @media #{$sm} {
+                grid-column: auto;
+            }
+        }
+
+    }
+
+    .contact-formfield {
+        background-color: #F9F9F9;
+        padding: 0 29px;
+        border: 1px solid var(--border);
+        border-radius: 0px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+
+        input {
+            width: 100%;
+            height: 48px;
+            border: none;
+            outline: none;
+            color: var(--black);
+            transition: all 0.5s;
+            font-size: 16px;
+            line-height: 26px;
+            background: none;
+
+            &:focus {
+                background-color: none;
+            }
+
+            &::placeholder {
+                color: var(--secondary);
+            }
+
+        }
+
+
+        textarea {
+            width: 100%;
+            height: 160px;
+            border: none;
+            outline: none;
+            color: var(--black);
+            transition: all 0.5s;
+            font-size: 16px;
+            line-height: 26px;
+            padding: 16px 0;
+            background: none;
+            resize: none;
+
+            &:focus {
+                background-color: none;
+            }
+
+            &::placeholder {
+                color: var(--secondary);
+            }
+
+        }
+    }
+
+    .submit-btn {
+        margin-top: 44px;
+
+        @media #{$lg} {
+            margin-top: 34px;
+        }
+    }
+
+    .ui-btn {
+        &:hover {
+            .btn-text {
+                background-color: var(--black);
+                color: var(--white);
+            }
+
+            .btn-icon {
+                background-color: var(--black);
+                color: var(--white);
+            }
+        }
+
+        .btn-text {
+            background-color: var(--theme);
+            color: var(--black);
+        }
+
+        .btn-icon {
+            background-color: var(--theme);
+            color: var(--black);
+        }
+
+    }
+}
+
+/* location area style  */
+.location-wrapper {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media #{$md} {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    @media #{$sm} {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+
+.location-box {
+    background-color: #F9F9F9;
+    padding: 24px 24px 34px;
+
+    @media #{$xs} {
+        padding: 14px 14px 24px;
+
+    }
+
+    .thumb {
+        img {
+            width: 100%;
+
+        }
+    }
+
+    .content {
+        margin-top: 26px;
+        text-align: center;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 1.5;
+        text-transform: capitalize;
+
+        @media #{$lg} {
+            font-size: 24px;
+        }
+    }
+
+    .links {
+        margin-top: 22px;
+
+        @media #{$lg} {
+            margin-top: 12px;
+        }
+
+        li {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 32px;
+            list-style: none;
+        }
+
+    }
+
+
+    .ui-btn {
+
+        &.bordered {
+            margin-top: 40px;
+            width: 100%;
+
+            @media #{$lg} {
+                margin-top: 20px;
+            }
+        }
+
+        .btn-text {
+            width: 100%;
+            border-color: rgba(18, 18, 18, 0.1);
+        }
+    }
+}

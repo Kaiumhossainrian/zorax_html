@@ -1,0 +1,123 @@
+/* text-slider css */
+/* text slider area style  */
+
+.text-slider-active {
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+.text-slider-2-active {
+    margin-top: 54px;
+    direction: rtl;
+
+    @media #{$xxl} {
+        margin-top: 44px;
+    }
+
+    @media #{$xl} {
+        margin-top: 34px;
+    }
+
+    @media #{$lg} {
+        margin-top: 24px;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+}
+
+
+.text-slider-wrapper-box {
+    background-color: var(--background);
+    margin-top: 40px;
+    padding-top: 221px;
+    padding-bottom: 214px;
+
+    @media #{$xxl} {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    @media #{$xl} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media #{$lg} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.text-slider-wrapper {
+    .swiper-wrapper {
+        transition-timing-function: linear !important;
+    }
+}
+
+
+.text-slider-item {
+    .title {
+        font-family: var(--font_cooperhewitt);
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 1.3;
+        text-transform: uppercase;
+        color: var(--white);
+        display: flex;
+        align-items: flex-end;
+
+        @media #{$xxl} {
+            font-size: 40px;
+        }
+
+        @media #{$xl} {
+            font-size: 36px;
+        }
+
+        @media #{$lg} {
+            font-size: 30px;
+        }
+
+        @media #{$md} {
+            font-size: 28px;
+
+        }
+
+        @media #{$sm} {
+            font-size: 24px;
+
+        }
+
+        @media #{$xs} {
+            font-size: 20px;
+
+        }
+
+        .shape {
+            width: 120px;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.14);
+            margin: 0 8px;
+
+            @media #{$xxl} {
+                width: 100px;
+            }
+
+            @media #{$xl} {
+                width: 80px;
+            }
+
+            @media #{$lg} {
+                width: 60px;
+            }
+
+            @media #{$md} {
+                width: 40px;
+            }
+        }
+
+    }
+}

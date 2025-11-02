@@ -1,0 +1,107 @@
+/* error css */
+/* error area style  */
+.error-area-inner {
+    margin-top: 90px;
+    padding-top: 118px;
+    padding-bottom: 130px;
+
+    @media #{$xxl} {
+        padding-top: 110px;
+        padding-bottom: 110px;
+    }
+
+    @media #{$xl} {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+
+    @media #{$lg} {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin-top: 80px;
+    }
+
+}
+
+.error-content {
+    text-align: center;
+
+    .thumb {
+        img {
+            width: 822px;
+
+            @media #{$xxl} {
+                width: 622px;
+            }
+
+            @media #{$md} {
+                width: 522px;
+            }
+
+            @media #{$sm} {
+                width: 422px;
+            }
+        }
+    }
+
+    .title-wrapper {
+        margin-top: 50px;
+    }
+
+    .title {
+        font-weight: 400;
+        font-size: 44px;
+        line-height: 1.2;
+        text-transform: capitalize;
+
+        @media #{$md} {
+            font-size: 40px;
+        }
+
+        @media #{$sm} {
+            font-size: 35px;
+        }
+    }
+
+    .text-wrapper {
+        margin-top: 12px;
+    }
+
+    .text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 34px;
+        text-align: center;
+        max-width: 410px;
+        margin-inline: auto;
+    }
+
+    .btn-wrapper {
+        margin-top: 33px;
+    }
+
+    .ui-btn {
+        &:hover {
+            .btn-text {
+                background-color: var(--black);
+                color: var(--white);
+            }
+
+            .btn-icon {
+                background-color: var(--black);
+                color: var(--white);
+            }
+        }
+
+        .btn-text {
+            background-color: var(--theme);
+            color: var(--black);
+        }
+
+        .btn-icon {
+            background-color: var(--theme);
+            color: var(--black);
+        }
+
+    }
+}
