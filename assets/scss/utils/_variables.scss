@@ -1,68 +1,38 @@
 /*-----------------------------------------------------------------------------------
 
-  Theme Name: Zorax - Modern Agency Portfolio HTML Template
-  Author: 
+  Theme Name: Feux - Agency HTML Template
+  Author: wprealizer 
   Support: 
   Description: 
-  Version: 1.0.0
+  Version: 1.0
 
 -----------------------------------------------------------------------------------
 
 /************ TABLE OF CONTENTS ***************
-/* variable css */
-/* typography css */
-/* animation css */
-/* common css */
-/* theme css */
-/* preloader css */
-/* scroll css */
-/* button css */
-/* menu css */
-/* modal css */
-/* cursor css */
-/* header css */
-/* footer css */
-/* hero css */
-/* about css */
-/* work css */
-/* service css */
-/* fun-fact css */
-/* team css */
-/* brand css */
-/* blog css */
-/* testimonial css */
-/* cta css */
-/* award css */
-/* story css */
-/* process css */
-/* pricing css */
-/* error css */
-/* contact css */
-/* offcanvas css */
-/* skill css */
-/* text-slider css */
-/* img-reveal css */
 
 
+/*----------------------------------------*/
+/* VARIBALES CSS START
+/*----------------------------------------*/
 
-/* variable css */
 // Colors
 :root {
-  --primary: #0F0E0E;
-  --secondary: rgba(15, 14, 14, 0.6);
-  --border: rgba(15, 14, 14, 0.1);
-  --bg: #0F0E0E;
-  --theme: #C9F31D;
+  --primary: #0E0F11;
+  --secondary: #525355;
+  --border: #0E0F11;
+  --bg: #0E0F11;
+  --theme: #AFF42B;
 
-  --black: #0F0E0E;
+  --black: #0E0F11;
+  --black-2: #525355;
   --white: #FFFFFF;
+  --white-2: #FFFFFF;
 
-  --action: #C9F31D;
-
-  --secondary-2: #04030A;
-  --background: #1B1B1B;
-  --font-color: #FFFFFF;
+  --action: #AFF42B;
 }
+
+
+
 
 // Responsive Variable
 $xxxl: 'only screen and (min-width: 1920px)';
@@ -73,6 +43,9 @@ $md: 'only screen and (max-width: 991px)';
 $sm: 'only screen and (max-width: 767px)';
 $xs: '(max-width: 575px)';
 
+// For Box Layout
+$bl: 'only screen and (min-width: 1600px)';
+
 
 // Responsive Variable for container
 $cxxl: '(width > 1919px)';
@@ -81,27 +54,3 @@ $clg: '(width > 1199px)';
 $cmd: '(width > 991px)';
 $csm: '(width > 767px)';
 $cxs: '(width > 575px)';
-
-html {
-  --container-max-widths: 1320px;
-
-  @media (min-width: 1630px) {
-    --container-max-widths: 1630px;
-  }
-
-  @media #{$xl} {
-    --container-max-widths: 1140px;
-  }
-
-  @media #{$lg} {
-    --container-max-widths: 960px;
-  }
-
-  @media #{$md} {
-    --container-max-widths: 720px;
-  }
-
-  @media #{$sm} {
-    --container-max-widths: 540px;
-  }
-}

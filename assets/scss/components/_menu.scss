@@ -1,4 +1,10 @@
-/* menu css */
+/*----------------------------------------*/
+/*  01. MENU CSS START
+/*----------------------------------------*/
+
+
+
+
 .main-menu {
   &.menu-dark>ul>li>a {
     color: var(--black);
@@ -13,11 +19,9 @@
     display: flex;
 
     >li {
-      padding: 5px 0;
-
       &:hover {
         >a {
-          color: var(--secondary);
+          color: var(--primary);
         }
 
         >ul {
@@ -41,7 +45,6 @@
 
   li {
     position: relative;
-    list-style: none;
 
     a {
       display: flex;
@@ -53,6 +56,9 @@
       padding: 37px 15px;
       text-transform: capitalize;
 
+      @include dark {
+        color: var(--black);
+      }
     }
   }
 
@@ -67,24 +73,17 @@
     opacity: 0;
     pointer-events: none;
     z-index: 10;
-    border-radius: 6px;
-    margin-top: 5px;
     transition: all 0.5s;
 
-    &.column-2 {
-      column-count: 2;
-      width: 480px;
-      column-gap: 0;
-    }
-
     ul {
-      background: var(--black);
+      background-color: #232529;
       padding: 18px 0px;
-      width: 300px;
+      width: 250px;
       position: absolute;
       inset-inline-start: calc(100% + 10px);
       top: 0;
       opacity: 0;
+      pointer-events: none;
       z-index: 10;
       transition: all 0.5s;
     }
@@ -108,12 +107,12 @@
 
       a {
         font-size: 16px;
-        font-weight: 400;
+        font-weight: 500;
         color: #999999;
         padding: 10px 0;
         background-color: transparent;
-        border-radius: 6px;
-        text-transform: uppercase;
+        border-radius: 8px;
+        text-transform: capitalize;
 
         &:hover {
           letter-spacing: 0.5px;
@@ -450,6 +449,8 @@
       }
     }
   }
+
+
 }
 
 
@@ -681,7 +682,10 @@
         transition: transform .4s ease, box-shadow .4s ease;
         box-sizing: border-box;
 
-
+        @include dark {
+          color: var(--black);
+          border-color: var(--white-4);
+        }
 
         @media #{$sm} {
           font-size: 20px;
@@ -694,7 +698,13 @@
           font-weight: 300;
           border: none !important;
 
+          @include dark {
+            background-color: var(--white-4);
+          }
 
+          @include rtl {
+            right: 275px;
+          }
 
           @media #{$sm} {
             height: 50px;
@@ -704,6 +714,9 @@
             background: var(--secondary);
             opacity: 1;
 
+            @include dark {
+              background-color: var(--white-4);
+            }
           }
         }
       }
@@ -712,6 +725,9 @@
         &:first-child {
           border-top: 1px solid var(--black-4);
 
+          @include dark {
+            border-color: var(--white-4);
+          }
         }
 
         a {

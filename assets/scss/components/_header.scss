@@ -35,8 +35,8 @@
             >li {
                 &:hover {
                     >a {
-                        background-color: var(--theme);
-                        color: var(--black);
+                        background-color: #C9F31D;
+                        color: #0F0E0E;
                     }
 
                 }
@@ -84,7 +84,7 @@
     .side-toggle {
         width: 80px;
         height: 50px;
-        border: 1px solid var(--border);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 100px;
         display: flex;
         align-items: center;
@@ -131,13 +131,13 @@
         display: inline-flex;
         gap: 12px;
         align-items: center;
-        border: 1px solid var(--border);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 100px;
         padding: 15px 25px;
         transition: all 0.3s;
 
         &:hover {
-            background-color: var(--theme);
+            background-color: #C9F31D;
             border-color: transparent;
         }
     }
@@ -148,7 +148,7 @@
     .ui-offcanvas-open-btn {
         width: 80px;
         height: 50px;
-        border: 1px solid var(--border);
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 100px;
         display: flex;
         align-items: center;
@@ -156,7 +156,7 @@
         transition: all 0.3s;
 
         &:hover {
-            background-color: var(--theme);
+            background-color: #C9F31D;
             border-color: transparent;
         }
     }
@@ -193,12 +193,12 @@
     .ui-btn-group-2 {
         .btn-text {
             padding: 15px 33px;
-            border-color: var(--border);
+            border-color: rgba(255, 255, 255, 0.2);
         }
 
         .btn-icon {
             width: 50px;
-            border-color: var(--border);
+            border-color: rgba(255, 255, 255, 0.2);
         }
     }
 }
@@ -216,10 +216,10 @@
         gap: 10px;
         align-items: center;
         position: relative;
-        height: 90px;
+        padding-block: 30px;
 
         @media #{$lg} {
-            height: 80px;
+            padding-block: 25px;
         }
     }
 
@@ -239,8 +239,8 @@
             >li {
                 &:hover {
                     >a {
-                        background-color: var(--theme);
-                        color: var(--black);
+                        background-color: #C9F31D;
+                        color: #0F0E0E;
                     }
 
                 }
@@ -286,22 +286,22 @@
     .ui-btn {
         &:hover {
             .btn-text {
-                background-color: var(--theme);
+                background-color: #C9F31D;
             }
 
             .btn-icon {
-                background-color: var(--theme);
+                background-color: #C9F31D;
             }
         }
 
         .btn-text {
-            background-color: var(--white);
-            color: var(--black);
+            background-color: #FFFFFF;
+            color: #0F0E0E;
         }
 
         .btn-icon {
-            background-color: var(--white);
-            color: var(--black);
+            background-color: #FFFFFF;
+            color: #0F0E0E;
         }
     }
 }

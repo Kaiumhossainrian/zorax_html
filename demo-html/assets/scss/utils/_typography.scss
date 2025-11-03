@@ -1,0 +1,150 @@
+/* typography css */
+
+
+// ----------------------------
+// Font Family
+// ---------------------------
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --font_kanit: "Kanit", sans-serif;
+  --font_inter: "Inter", sans-serif;
+  --font_roboto: "Roboto", sans-serif;
+  --font_handjet: "Handjet", sans-serif;
+  --font_cooperhewitt: "CooperHewitt";
+  --font_awesome: 'Font Awesome 6 pro';
+}
+
+/* downloaded fonts  */
+@font-face {
+  font-family: 'CooperHewitt';
+  src: url('../webfonts/CooperHewitt-Medium.otf');
+  font-weight: 707;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'CooperHewitt';
+  src: url('../webfonts/CooperHewitt-Semibold.otf');
+  font-weight: 709;
+  font-style: normal;
+}
+
+
+// Defalut Style
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font_kanit);
+  line-height: 1;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  color: var(--primary);
+  line-height: 1.15;
+  font-family: var(--font_kanit);
+  font-weight: 400;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+  transition: all 0.3s;
+  color: inherit;
+
+  &:hover {
+    color: var(--primary);
+  }
+
+}
+
+button {
+  background-color: transparent;
+  border: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  color: var(--secondary);
+}
+
+strong {
+  font-weight: 500;
+}
+
+video,
+iframe,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.medium {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+main {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h4 {
+  font-size: 24px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 18px;
+}

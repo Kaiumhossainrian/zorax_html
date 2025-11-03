@@ -1,37 +1,39 @@
-/* typography css */
-
+/*----------------------------------------*/
+/* TYPOGRAPHY CSS START
+/*----------------------------------------*/
 
 // ----------------------------
 // Font Family
 // ---------------------------
 
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+// instrument sans
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap");
+
+// poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+// dm sans
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+// dm sans
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 :root {
+  --font_instrumentsans: "Instrument Sans", sans-serif;
+  --font_awesome: "Font Awesome 6 Free";
+  --font_poppins: "Poppins", sans-serif;
+  --font_dmsans: "DM Sans", serif;
+  --playfair_display: "Playfair Display", serif;
   --font_kanit: "Kanit", sans-serif;
-  --font_inter: "Inter", sans-serif;
-  --font_roboto: "Roboto", sans-serif;
   --font_handjet: "Handjet", sans-serif;
-  --font_cooperhewitt: "CooperHewitt";
-  --font_awesome: 'Font Awesome 6 pro';
+  --font_roboto: "Roboto", sans-serif;
 }
-
-/* downloaded fonts  */
-@font-face {
-  font-family: 'CooperHewitt';
-  src: url('../webfonts/CooperHewitt-Medium.otf');
-  font-weight: 707;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'CooperHewitt';
-  src: url('../webfonts/CooperHewitt-Semibold.otf');
-  font-weight: 709;
-  font-style: normal;
-}
-
 
 // Defalut Style
 * {
@@ -40,11 +42,9 @@
 }
 
 body {
-  font-family: var(--font_kanit);
+  font-family: var(--font_instrumentsans);
   line-height: 1;
 }
-
-
 
 html {
   scroll-behavior: smooth;
@@ -59,9 +59,9 @@ h6 {
   padding: 0;
   margin: 0;
   color: var(--primary);
-  line-height: 1.15;
-  font-family: var(--font_kanit);
-  font-weight: 400;
+  line-height: 1.22;
+  font-family: var(--font_instrumentsans);
+  font-weight: 500;
 }
 
 ul,
@@ -70,6 +70,9 @@ ol {
   margin: 0;
 }
 
+li {
+  list-style: none;
+}
 
 a {
   text-decoration: none;
@@ -79,7 +82,6 @@ a {
   &:hover {
     color: var(--primary);
   }
-
 }
 
 button {
@@ -90,9 +92,9 @@ button {
 p {
   padding: 0;
   margin: 0;
-  font-weight: 400;
   font-size: 18px;
-  line-height: 34px;
+  font-weight: 400;
+  line-height: 26px;
   color: var(--secondary);
 }
 
@@ -117,6 +119,23 @@ img {
 
 .bold {
   font-weight: 700;
+}
+
+// No Gutter
+@media #{$sm} {
+  .g-0 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .row.g-0 {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  br {
+    display: none;
+  }
 }
 
 main {

@@ -1,11 +1,13 @@
-/* animation css */
+/*----------------------------------------*/
+/* ANIMATION CSS START
+/*----------------------------------------*/
 
-.t_parallax_image {
+.cf_parallax_image {
   overflow: hidden;
 }
 
 // Bubble
-@keyframes t-Bubble {
+@keyframes wcBubble {
   0% {
     scale: 1;
   }
@@ -21,7 +23,7 @@
 
 
 // Zoom
-@keyframes t-Zoom {
+@keyframes wcZoom {
   0% {
     scale: 1;
   }
@@ -36,7 +38,7 @@
 }
 
 // Zoom 2
-@keyframes t-Zoom_2 {
+@keyframes wcZoom_2 {
   0% {
     scale: 1;
   }
@@ -52,7 +54,7 @@
 
 
 // Slide 
-@keyframes ui-SlideBottom {
+@keyframes wcSlideBottom {
   0% {
     transform: translateY(0);
   }
@@ -68,7 +70,7 @@
 
 
 // 
-@keyframes t-reveal {
+@keyframes reveal {
   to {
     opacity: 1;
     filter: blur(0px);
@@ -76,7 +78,7 @@
 }
 
 // Fade Up
-@keyframes t-fadeUp {
+@keyframes fadeUp {
   0% {
     opacity: 0;
     -webkit-transform: translateY(50px);
@@ -94,13 +96,13 @@
 
 
 
-@keyframes t-spinner {
+@keyframes spinner {
   to {
     transform: rotateZ(360deg);
   }
 }
 
-@keyframes t-characters {
+@keyframes characters {
 
   0%,
   75%,
@@ -116,19 +118,9 @@
   }
 }
 
-@keyframes t-sheen {
+@keyframes sheen {
   50% {
     transform: translateY(-20px);
     color: var(--primary);
-  }
-}
-
-@keyframes t-slide {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-100%);
   }
 }

@@ -1,26 +1,49 @@
-/* theme css */
+/*----------------------------------------*/
+/* THEME CSS START
+/*----------------------------------------*/
+
+
+
+
+html {
+  --container-max-widths: 1320px;
+
+  @media #{$xl} {
+    --container-max-widths: 1140px;
+  }
+
+  @media #{$lg} {
+    --container-max-widths: 960px;
+  }
+
+  @media #{$md} {
+    --container-max-widths: 720px;
+  }
+
+  @media #{$sm} {
+    --container-max-widths: 540px;
+  }
+
+  @media #{$xs} {
+    --container-max-widths: 100%;
+  }
+}
+
+
 body {
-  background-color: #FFFFFF;
+  background-color: #F5F5F5;
   color: var(--secondary);
 }
 
 .body-wrapper {
   background-color: var(--white);
 
-  &.dark {
+  @include dark {
     background-color: var(--black);
-  }
-
-  &.creative-agency {
-    background-color: var(--secondary-2);
-  }
-
-  &.personal-portfolio {
-    background-color: #111111;
   }
 }
 
-.img_anim_reveal {
+.img-reveal-top {
   visibility: hidden;
   overflow: hidden;
 
@@ -56,11 +79,13 @@ body {
     color: var(--secondary);
   }
 
+
+
 }
 
 
 // BG Color
-.ui-bg {
+.bg-color {
 
   &-white {
     background-color: var(--white);
@@ -68,10 +93,6 @@ body {
 
   &-black {
     background-color: var(--black);
-
-    @include dark {
-      background-color: #171717;
-    }
   }
 
   &-primary {
@@ -83,11 +104,7 @@ body {
   }
 
   &-transparent {
-    background-color: transparent;
-  }
-
-  &-theme {
-    background-color: var(--theme);
+    background-color: transparent !important;
   }
 }
 
@@ -110,7 +127,12 @@ body {
 }
 
 
-
+// Box Layout
+.box-layout {
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow: hidden !important;
+}
 
 
 // Text Border
@@ -118,8 +140,6 @@ body {
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 5px;
-  text-decoration-skip-ink: none;
-
 }
 
 
@@ -156,37 +176,33 @@ section {
   margin-bottom: -1px;
 }
 
-.mb--1 {
-  margin-bottom: -1px;
-}
-
 .dir-rtl {
   direction: rtl;
 }
 
-.show-light {
+.show-dark {
   display: inline-block;
 
   @include dark {
     display: none;
   }
-
 }
 
-.show-dark {
+.show-light {
   display: none;
 
   @include dark {
     display: inline-block;
   }
-
 }
 
 .line-divider-sm {
   height: 0.5px;
   background-color: var(--black-9);
 
-
+  @include dark {
+    background-color: #E9E9E9;
+  }
 }
 
 

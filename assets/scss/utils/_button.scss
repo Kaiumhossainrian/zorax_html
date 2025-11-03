@@ -1,0 +1,88 @@
+.ui-btn {
+  display: inline-flex;
+  font-family: var(--font_kanit);
+
+  &:hover {
+    .btn-text {
+      background-color: #C9F31D;
+      color: #0F0E0E;
+    }
+
+    .btn-icon {
+      background-color: #C9F31D;
+      color: #0F0E0E;
+    }
+  }
+
+  .btn-text {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 135.333%;
+    padding: 12px 22px;
+    background-color: #0F0E0E;
+    border-radius: 10px;
+    color: var(--white);
+    transition: all 0.3s;
+  }
+
+  .btn-icon {
+    width: 46px;
+    background-color: #0F0E0E;
+    color: var(--white);
+    font-size: 15px;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
+  }
+
+  &.bordered {
+    &:hover {
+      .btn-text {
+        background-color: #C9F31D;
+        border-color: transparent;
+      }
+
+      .btn-icon {
+        background-color: #C9F31D;
+        border-color: transparent;
+      }
+    }
+
+    .btn-text {
+      background-color: transparent;
+      border: 1px solid #0F0E0E;
+      padding: 13px 23px;
+      color: #0F0E0E;
+
+    }
+
+    .btn-icon {
+      background-color: transparent;
+      border: 1px solid #0F0E0E;
+      color: #0F0E0E;
+    }
+  }
+
+  &.circle {
+    .btn-text {
+      border-radius: 100px;
+    }
+
+    .btn-icon {
+      border-radius: 100px;
+    }
+  }
+
+  &.reversed {
+    flex-direction: row-reverse;
+    gap: 10px;
+
+    &:hover {
+      .btn-icon {
+        transform: translateX(10px);
+      }
+    }
+  }
+}
