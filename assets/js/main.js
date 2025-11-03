@@ -1391,6 +1391,7 @@
       autoplay: true,
       spaceBetween: 0,
       speed: 10000,
+      allowTouchMove: false,
       autoplay: {
         delay: 1,
       },
@@ -1405,12 +1406,13 @@
       autoplay: true,
       spaceBetween: 0,
       speed: 10000,
-      reverseDirection: true,
+      allowTouchMove: false,
       autoplay: {
         delay: 1,
       },
     });
   }
+
 
 })(jQuery);
 

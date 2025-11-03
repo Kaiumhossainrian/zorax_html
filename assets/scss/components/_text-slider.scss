@@ -34,6 +34,8 @@
     margin-top: 40px;
     padding-top: 221px;
     padding-bottom: 214px;
+    position: relative;
+    overflow: hidden;
 
     @media #{$xxl} {
         padding-top: 110px;
