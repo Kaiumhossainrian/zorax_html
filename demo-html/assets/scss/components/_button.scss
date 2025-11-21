@@ -55,7 +55,6 @@
       border: 1px solid var(--black);
       padding: 13px 23px;
       color: var(--black);
-
     }
 
     .btn-icon {
@@ -82,6 +81,36 @@
     &:hover {
       .btn-icon {
         transform: translateX(10px);
+      }
+    }
+  }
+  &.v2 {
+    &.bordered {
+      &:hover {
+        .btn-text {
+          background-color: var(--theme);
+          color: var(--black);
+          border-color: var(--black);
+        }
+
+        .btn-icon {
+          background-color: var(--theme);
+          border-color: var(--black);
+          color: var(--black);
+        }
+      }
+
+      .btn-text {
+        background-color: transparent;
+        border: 1px solid var(--white);
+        padding: 13px 23px;
+        color: var(--white);
+      }
+
+      .btn-icon {
+        background-color: transparent;
+        border: 1px solid var(--white);
+        color: var(--white);
       }
     }
   }
@@ -177,7 +206,6 @@
   }
 }
 
-
 // Button Animation KeyFrame
 @keyframes mask_animation {
   from {
@@ -203,13 +231,11 @@
   }
 }
 
-
-// 
+//
 // Button Hover Animation
-// 
+//
 .btn {
   &-hover {
-
     &-default {
       transition: all 0.5s;
 
@@ -273,7 +299,6 @@
         border-color: var(--primary);
         background-color: transparent !important;
         border-color: transparent;
-
 
         &::after {
           height: 400%;
@@ -352,8 +377,6 @@
           animation: mask_animation 0.7s steps(22) forwards;
         }
       }
-
-
     }
   }
 
@@ -369,7 +392,7 @@
         height: 0px;
         width: 100%;
         z-index: -1;
-        content: '';
+        content: "";
         background-color: var(--primary);
         transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
       }
@@ -397,7 +420,7 @@
         height: 100%;
         width: 0px;
         z-index: -1;
-        content: '';
+        content: "";
         background-color: var(--primary);
         transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
       }
@@ -548,7 +571,6 @@
     transform: translate(-50%, -50%);
   }
 
-
   &:before {
     position: absolute;
     content: "";
@@ -565,39 +587,38 @@
   }
 }
 
-
-// ui-btn-group 
+// ui-btn-group
 .ui-btn-group {
   display: inline-flex;
 
-  >*:nth-child(1) {
+  > *:nth-child(1) {
     transform: scale3d(0.5, 0.5, 1);
     margin-right: -46px;
     transition: all 0.3s;
   }
 
-  >*:nth-child(2) {
+  > *:nth-child(2) {
     transform: scale3d(1, 1, 1);
     transition: all 0.3s;
   }
 
-  >*:nth-child(3) {
+  > *:nth-child(3) {
     transform: scale3d(1, 1, 1);
     margin-left: 0;
     transition: all 0.3s;
   }
 
   &:hover {
-    >*:nth-child(1) {
+    > *:nth-child(1) {
       transform: scale3d(1, 1, 1);
       margin-right: 0;
     }
 
-    >*:nth-child(2) {
+    > *:nth-child(2) {
       transform: scale3d(1, 1, 1);
     }
 
-    >*:nth-child(3) {
+    > *:nth-child(3) {
       transform: scale3d(0.5, 0.5, 1);
       margin-left: -46px;
     }
@@ -642,53 +663,52 @@
 
     .btn-text {
       background-color: var(--white);
-      border: 1px solid #EEEEEE;
+      border: 1px solid #eeeeee;
       padding: 13px 23px;
       color: var(--black);
-
     }
 
     .btn-icon {
       background-color: var(--white);
-      border: 1px solid #EEEEEE;
+      border: 1px solid #eeeeee;
       color: var(--black);
     }
   }
 }
 
-// ui-btn-group-2 
+// ui-btn-group-2
 .ui-btn-group-2 {
   display: inline-flex;
   gap: 2px;
 
-  >*:nth-child(1) {
+  > *:nth-child(1) {
     transform: scale3d(1, 1, 1);
     margin-right: 0;
     transition: all 0.3s;
   }
 
-  >*:nth-child(2) {
+  > *:nth-child(2) {
     transform: scale3d(1, 1, 1);
     transition: all 0.3s;
   }
 
-  >*:nth-child(3) {
+  > *:nth-child(3) {
     transform: scale3d(0.5, 0.5, 1);
     margin-left: -46px;
     transition: all 0.3s;
   }
 
   &:hover {
-    >*:nth-child(1) {
+    > *:nth-child(1) {
       transform: scale3d(0.5, 0.5, 1);
       margin-right: -46px;
     }
 
-    >*:nth-child(2) {
+    > *:nth-child(2) {
       transform: scale3d(1, 1, 1);
     }
 
-    >*:nth-child(3) {
+    > *:nth-child(3) {
       transform: scale3d(1, 1, 1);
       margin-left: 0;
     }
@@ -734,15 +754,14 @@
 
     .btn-text {
       background-color: var(--white);
-      border: 1px solid #04030A;
+      border: 1px solid #04030a;
       padding: 13px 23px;
       color: var(--black);
-
     }
 
     .btn-icon {
       background-color: var(--white);
-      border: 1px solid #04030A;
+      border: 1px solid #04030a;
       color: var(--black);
     }
   }
